@@ -30,7 +30,14 @@ function fetchData(city) {
                 newLiEl.appendChild(newCityEl);
                 cityList.appendChild(newLiEl);
 
-                // save city to local storage
+                if (localStorage.getItem("cities") == null) { //if no cities saved locally yet
+                    var storedCities = [city]; // just save the one city
+                } else { // otherwise
+                    var storedCities = JSON.parse(localStorage.getItem("cities")); // create array of existing saved cities
+                    storedCities.push(city); // push new city onto end
+                }
+
+                localStorage.setItem("cities", JSON.stringify(storedCities)); // stringifies array of cities and saves them to local storage
 
                 response.json().then(function (data) {
                     console.log(data);
@@ -67,7 +74,7 @@ function fetchData(city) {
                     console.log(data);
 
                     for(i = 0; i < data.list.length; i += 8) {
-                        var date = dayjs.unix(data.list[i].dt).format("M/D/YYYY");
+                        var date = dayjs.unix(data.list[i].dt).format("M/D/YYYY (h:mm a)");
                         forecastEl.children[1].children[i/8].children[0].textContent = date;
 
                         var iconId = data.list[i].weather[0].icon;
