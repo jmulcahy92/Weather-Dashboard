@@ -16,47 +16,34 @@
     <main>
         <aside>
             <h2>Search for a City:</h2>
-            <form action="">
-                <input type="">
-                <button>Search</button>
+            <form>
+                <input type="text" id="city-input" placeholder="San Diego" name="city-text">
+                <button id="search-button">Search</button>
             </form>
-            <ul>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-                <li><button>test</button></li>
-               
-            </ul>
+            <ul id="city-list"></ul>
         </aside>
+
         <article>
             <section id="current-weather">
                 <h3>City</h3>
-                <p>Temp: </p>
-                <p>Wind: </p>
-                <p>Humidity: </p>
+                <p>Temp: --</p>
+                <p>Wind: --</p>
+                <p>Humidity: --</p>
             </section>
             <section id="five-day-forecast">
                 <h3>5-Day Forecast:</h4>
                 <ul>
-                    <li class="card"><p>Date</p><p>emoji</p><p>Temp: </p><p>Wind: </p><p>Humidity: </p></li>
-                    <li class="card"><p>Date</p><p>emoji</p><p>Temp: </p><p>Wind: </p><p>Humidity: </p></li>
-                    <li class="card"><p>Date</p><p>emoji</p><p>Temp: </p><p>Wind: </p><p>Humidity: </p></li>
-                    <li class="card"><p>Date</p><p>emoji</p><p>Temp: </p><p>Wind: </p><p>Humidity: </p></li>
-                    <li class="card"><p>Date</p><p>emoji</p><p>Temp: </p><p>Wind: </p><p>Humidity: </p></li>
+                    <li class="card"><p class="date">Date</p><img src=""><p>Temp: --</p><p>Wind: --</p><p>Humidity: --</p></li>
+                    <li class="card"><p class="date">Date</p><img src=""><p>Temp: --</p><p>Wind: --</p><p>Humidity: --</p></li>
+                    <li class="card"><p class="date">Date</p><img src=""><p>Temp: --</p><p>Wind: --</p><p>Humidity: --</p></li>
+                    <li class="card"><p class="date">Date</p><img src=""><p>Temp: --</p><p>Wind: --</p><p>Humidity: --</p></li>
+                    <li class="card"><p class="date">Date</p><img src=""><p>Temp: --</p><p>Wind: --</p><p>Humidity: --</p></li>
                 </ul>
             </section>
         </article>
     </main>
     
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body> 
 </html>
