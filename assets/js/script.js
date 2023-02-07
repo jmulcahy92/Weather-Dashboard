@@ -37,7 +37,7 @@ function fetchData(city) {
         
                     var date = dayjs.unix(data.dt).format('M/D/YYYY');
                     var iconId = data.weather[0].icon;
-                    var iconUrl = "http://openweathermap.org/img/wn/" + iconId + "@2x.png";
+                    var iconUrl = "https://openweathermap.org/img/wn/" + iconId + "@2x.png";
                     var iconEl = document.createElement("img");
                     iconEl.setAttribute("src", iconUrl);
                     weatherEl.children[0].textContent = city + " " + "(" + date + ")"
@@ -71,7 +71,7 @@ function fetchData(city) {
                         forecastEl.children[1].children[i/8].children[0].textContent = date;
 
                         var iconId = data.list[i].weather[0].icon;
-                        forecastEl.children[1].children[i/8].children[1].setAttribute("src", "http://openweathermap.org/img/wn/" + iconId + "@2x.png")
+                        forecastEl.children[1].children[i/8].children[1].setAttribute("src", "https://openweathermap.org/img/wn/" + iconId + "@2x.png")
 
                         var temp = data.list[i].main.temp + " °F";
                         forecastEl.children[1].children[i/8].children[2].textContent = "Temp: " + temp;
