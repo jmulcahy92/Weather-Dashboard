@@ -2,7 +2,7 @@
 
 ## Description
 
-placeholder
+Uses the OpenWeather API to create a simple weather app. Users can input a city and get current weather data for that city as well as a five-day forecast. Weather/forecast data includes temperatures, wind speeds, humidity, and general cloudiness/precipitation conditions. Previously searched cities are saved to local storage and populated into shortcut buttons.
 
 ## Link
 
@@ -10,7 +10,7 @@ https://jmulcahy92.github.io/Weather-Dashboard/
 
 ## Screenshot
 
-![Screenshot of Weather Dashboard webpage](./assets/images/06-server-side-apis-homework-demo.png)
+![Screenshot of Weather Dashboard webpage](./assets/images/weather-dashboard.jpg)
 
 ## Installation
 
